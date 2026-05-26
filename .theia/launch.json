@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "firtsCode.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "firtsCode.c",
+                "resourceId": "/firtsCode.c"
+            }
+        },
+        {
+            "name": "m3ex1.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex1.c",
+                "resourceId": "/m3ex1.c"
+            }
+        }
+    ]
+}
