@@ -61,7 +61,7 @@ void lcdInit(){
     lcdWriteNibble(0x2, INSTR); // RS is not CHAR, é uma instrução, e o 0x2 é justamente instrução para ativar o modo 4 bits
 
     lcdWriteByte(0x06, INSTR); // configura display
-    lcdWriteByte(0x0F, 0); // Liga o display 
+    lcdWriteByte(0x0F, INSTR); // Liga o display 
     lcdWriteByte(0x14, INSTR); // cursor anda para direita
     lcdWriteByte(0x28, INSTR); // Modo 4 bits com 2 linhas
     

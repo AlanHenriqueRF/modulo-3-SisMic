@@ -2,39 +2,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "firtsCode.c",
+            "name": "m3ex2",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "firtsCode.c",
-                "resourceId": "/firtsCode.c"
+                "name": "m3ex2",
+                "resourceId": "/m3ex2"
             }
         },
         {
-            "name": "m3ex2.c",
+            "name": "m3ex6",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m3ex2.c",
-                "resourceId": "/m3ex2.c"
+                "name": "m3ex6",
+                "resourceId": "/m3ex6"
             }
         },
         {
-            "name": "m3ex6.c",
+            "name": "códigoTestAlanLCD",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m3ex6.c",
-                "resourceId": "/m3ex6.c"
-            }
-        },
-        {
-            "name": "m3ex4.c",
-            "type": "ccs-debug",
-            "request": "launch",
-            "projectInfo": {
-                "name": "m3ex4.c",
-                "resourceId": "/m3ex4.c"
+                "name": "códigoTestAlanLCD",
+                "resourceId": "/códigoTestAlanLCD"
             },
             "connections": [
                 {

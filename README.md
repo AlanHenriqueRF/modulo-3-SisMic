@@ -9,7 +9,10 @@ para perifericos conectados ao fio `SDA` do protocolo **I2C**.
 ---
 
 ## Vistos
-- visto 1: exercicio 6 (Escreva seu nome no display);
-- visto 2: exercicio 14;
-- visto 3: exercicio 19 (Escreva seu nome no terminal);
-- problema3: final da lista de exercicios;
+| Visto | Exercicio | Observação | Concluído | Apresentado |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 | 6 | Escreva seu nome no display | ✅ | ❌ |
+| 2 | 14 | - | ❌ | ❌ |
+| 3 | 19 | Escreva seu nome no Terminal | ❌ | ❌ |
+| Prob. | 20 | Final da lista de exercicios | ❌ | ❌ |
+| --- | --- | --- | --- | --- |
