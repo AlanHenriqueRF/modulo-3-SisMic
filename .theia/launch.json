@@ -18,6 +18,55 @@
                 "name": "m3ex1.c",
                 "resourceId": "/m3ex1.c"
             }
+        },
+        {
+            "name": "m3ex2.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex2.c",
+                "resourceId": "/m3ex2.c"
+            }
+        },
+        {
+            "name": "m3ex3.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex3.c",
+                "resourceId": "/m3ex3.c"
+            }
+        },
+        {
+            "name": "m3ex6.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex6.c",
+                "resourceId": "/m3ex6.c"
+            }
+        },
+        {
+            "name": "m3ex4.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex4.c",
+                "resourceId": "/m3ex4.c"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
