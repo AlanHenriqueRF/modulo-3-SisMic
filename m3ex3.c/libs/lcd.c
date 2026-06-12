@@ -1,4 +1,4 @@
-#include "C:\ti\ccs2050\ccs\ccs_base\msp430\include\msp430.h"
+#include <msp430.h>
 #include "lcd.h"
 #include "i2c.h"
 #include "types.h"

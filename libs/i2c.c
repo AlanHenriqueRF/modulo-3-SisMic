@@ -1,5 +1,5 @@
 #include "types.h"
-#include "C:\ti\ccs2050\ccs\ccs_base\msp430\include\msp430.h"
+#include <msp430.h>
 
 void i2cConfig() {
   // coloca a interface em reset
