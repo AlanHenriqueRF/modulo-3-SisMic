@@ -15,6 +15,7 @@ int main(void) {
   P2OUT |= BIT1;
   P2REN |= BIT1;
   P2IE |= BIT1;
+  P2IV &= ~BIT2;
 
   P1DIR &= ~BIT1;
   P1OUT |= BIT1;
@@ -33,7 +34,6 @@ int main(void) {
     P4OUT ^= BIT7;
     while(!P1IN & BIT1);
     debounce(5000);
-    P4OUT ^= BIT7;
   }
 }
 

@@ -21,14 +21,4 @@ void i2cConfig();
  */
 u8 i2cSend(u8 addr, u8 byte);
 
-/**
- * @brief TESTAR. Percorre todos os posiveis endereços dos escravos conectados ao SDA
- * e retorna o numero de pessoas conectadas.
- * @param addrs 
- * @return u8 
- * @warning FALTA TESTE
- * @Draft
- */
-u8 i2cScan(u8 * addrs);
-
 #endif

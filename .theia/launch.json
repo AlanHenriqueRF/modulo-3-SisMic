@@ -11,15 +11,6 @@
             }
         },
         {
-            "name": "m3ex1.c",
-            "type": "ccs-debug",
-            "request": "launch",
-            "projectInfo": {
-                "name": "m3ex1.c",
-                "resourceId": "/m3ex1.c"
-            }
-        },
-        {
             "name": "m3ex2.c",
             "type": "ccs-debug",
             "request": "launch",
