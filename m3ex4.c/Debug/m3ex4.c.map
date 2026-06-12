@@ -1,10 +1,10 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Fri Jun 12 14:34:45 2026
+>> Linked Fri Jun 12 16:31:00 2026
 
 OUTPUT FILE NAME:   <m3ex4.c.out>
-ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000457c
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000461a
 
 
 MEMORY CONFIGURATION
@@ -20,7 +20,7 @@ MEMORY CONFIGURATION
   INFOA                 00001980   00000080  00000000  00000080  RWIX
   USBRAM                00001c00   00000800  00000000  00000800  RWIX
   RAM                   00002400   00002000  000000a0  00001f60  RWIX
-  FLASH                 00004400   0000bb80  000001a2  0000b9de  RWIX
+  FLASH                 00004400   0000bb80  00000260  0000b920  RWIX
   INT00                 0000ff80   00000002  00000000  00000002  RWIX
   INT01                 0000ff82   00000002  00000000  00000002  RWIX
   INT02                 0000ff84   00000002  00000000  00000002  RWIX
@@ -97,24 +97,28 @@ section   page    origin      length       input sections
                   00004360    00000002     rts430x_sc_sd_eabi.lib : boot.c.obj (.stack)
                   00004362    0000009e     --HOLE--
 
-.text      0    00004400    0000019a     
-                  00004400    00000058     lcd.obj (.text:lcdInit)
-                  00004458    0000003a     lcd.obj (.text:lcdWriteNibble)
-                  00004492    00000034     i2c.obj (.text:i2cConfig)
-                  000044c6    00000034     i2c.obj (.text:i2cSend)
-                  000044fa    00000028     m3ex4.obj (.text:main)
-                  00004522    00000020     m3ex4.obj (.text:isr_S1)
-                  00004542    00000020     lcd.obj (.text:lcdWriteByte)
-                  00004562    0000001a     m3ex4.obj (.text:debounce)
-                  0000457c    00000014     rts430x_sc_sd_eabi.lib : boot.c.obj (.text:_c_int00_noinit_noargs)
-                  00004590    00000006                            : exit.c.obj (.text:abort)
-                  00004596    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+.text      0    00004400    00000238     
+                  00004400    0000006e     m3ex4.obj (.text:main)
+                  0000446e    00000058     lcd.obj (.text:lcdInit)
+                  000044c6    00000056     lcd.obj (.text:lcdPrint)
+                  0000451c    0000003a     lcd.obj (.text:lcdWriteNibble)
+                  00004556    00000034     i2c.obj (.text:i2cConfig)
+                  0000458a    00000034     i2c.obj (.text:i2cSend)
+                  000045be    00000022     m3ex4.obj (.text:isr_S1)
+                  000045e0    00000020     lcd.obj (.text:lcdWriteByte)
+                  00004600    0000001a     m3ex4.obj (.text:debounce)
+                  0000461a    00000014     rts430x_sc_sd_eabi.lib : boot.c.obj (.text:_c_int00_noinit_noargs)
+                  0000462e    00000006                            : exit.c.obj (.text:abort)
+                  00004634    00000004                            : pre_init.c.obj (.text:_system_pre_init)
 
 .cinit     0    00004400    00000000     
 
+.const     0    00004638    00000020     
+                  00004638    00000020     m3ex4.obj (.const:.string)
+
 .text:_isr 
-*          0    0000459a    00000008     
-                  0000459a    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+*          0    00004658    00000008     
+                  00004658    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
 
 .binit     0    00004400    00000000     
 
@@ -203,15 +207,15 @@ MODULE SUMMARY
        Module             code   ro data   rw data
        ------             ----   -------   -------
     .\
-       m3ex4.obj          98     2         0      
+       m3ex4.obj          170    34        0      
     +--+------------------+------+---------+---------+
-       Total:             98     2         0      
+       Total:             170    34        0      
                                                   
     .\libs\
-       lcd.obj            178    0         0      
+       lcd.obj            264    0         0      
        i2c.obj            104    0         0      
     +--+------------------+------+---------+---------+
-       Total:             282    0         0      
+       Total:             368    0         0      
                                                   
     C:\ti\ccs2050\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
        boot.c.obj         20     2         0      
@@ -244,7 +248,7 @@ MODULE SUMMARY
                                                   
        Stack:             0      0         160    
     +--+------------------+------+---------+---------+
-       Grand Total:       418    46        160    
+       Grand Total:       576    78        160    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -333,7 +337,7 @@ address   name
 00000732  ADC12MEM9             
 00000733  ADC12MEM9_H           
 00000732  ADC12MEM9_L           
-00004590  C$$EXIT               
+0000462e  C$$EXIT               
 000008c0  CBCTL0                
 000008c1  CBCTL0_H              
 000008c0  CBCTL0_L              
@@ -987,7 +991,7 @@ address   name
 00004400  __TI_CINIT_Base       
 00004400  __TI_CINIT_Limit      
 00004400  __TI_CINIT_Warm       
-0000459a  __TI_ISR_TRAP         
+00004658  __TI_ISR_TRAP         
 0000ffd2  __TI_int41            
 0000ffd4  __TI_int42            
 0000ffd6  __TI_int43            
@@ -1014,19 +1018,20 @@ ffffffff  __TI_pprof_out_hndl
 ffffffff  __TI_prof_data_size   
 ffffffff  __TI_prof_data_start  
 ffffffff  __c_args__            
-0000457c  _c_int00_noinit_noargs
+0000461a  _c_int00_noinit_noargs
 0000fffe  _reset_vector         
 00004360  _stack                
-00004596  _system_pre_init      
-00004590  abort                 
-00004562  debounce              
-00004492  i2cConfig             
-000044c6  i2cSend               
-00004522  isr_S1                
-00004400  lcdInit               
-00004542  lcdWriteByte          
-00004458  lcdWriteNibble        
-000044fa  main                  
+00004634  _system_pre_init      
+0000462e  abort                 
+00004600  debounce              
+00004556  i2cConfig             
+0000458a  i2cSend               
+000045be  isr_S1                
+0000446e  lcdInit               
+000044c6  lcdPrint              
+000045e0  lcdWriteByte          
+0000451c  lcdWriteNibble        
+00004400  main                  
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1769,19 +1774,20 @@ address   name
 00004400  __TI_CINIT_Base       
 00004400  __TI_CINIT_Limit      
 00004400  __TI_CINIT_Warm       
-00004400  lcdInit               
-00004458  lcdWriteNibble        
-00004492  i2cConfig             
-000044c6  i2cSend               
-000044fa  main                  
-00004522  isr_S1                
-00004542  lcdWriteByte          
-00004562  debounce              
-0000457c  _c_int00_noinit_noargs
-00004590  C$$EXIT               
-00004590  abort                 
-00004596  _system_pre_init      
-0000459a  __TI_ISR_TRAP         
+00004400  main                  
+0000446e  lcdInit               
+000044c6  lcdPrint              
+0000451c  lcdWriteNibble        
+00004556  i2cConfig             
+0000458a  i2cSend               
+000045be  isr_S1                
+000045e0  lcdWriteByte          
+00004600  debounce              
+0000461a  _c_int00_noinit_noargs
+0000462e  C$$EXIT               
+0000462e  abort                 
+00004634  _system_pre_init      
+00004658  __TI_ISR_TRAP         
 0000ffd2  __TI_int41            
 0000ffd4  __TI_int42            
 0000ffd6  __TI_int43            
@@ -1810,4 +1816,4 @@ ffffffff  __TI_prof_data_size
 ffffffff  __TI_prof_data_start  
 ffffffff  __c_args__            
 
-[776 symbols]
+[777 symbols]

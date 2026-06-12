@@ -21,8 +21,36 @@ void lcdWriteByte(u8 byte, u8 isChar){
 }
 
 void lcdPrint(u8 * str){
-    while (*str)
-        lcdWriteByte(*str++, CHAR);
+    u8 line = 0;
+    u8 col = 0;
+
+    while (*str != 0x00) {
+        char caracter = *str;
+
+        // Quebra explicita
+        if (caracter == '\n') {
+            if (line < LCD_ROWS - 1) {
+                col = 0;
+                lcdWriteByte(0x80 | 0x40, INSTR); // intrução bebe para colocar a posição do cursor na segunda linha
+            }
+            line++;
+            str++;
+            continue;
+        }
+
+        // Auto-quebra ao estourar a coluna
+        if (col >= LCD_COLS) {
+            if (line < LCD_ROWS - 1) {
+                line++;
+                col = 0;
+                lcdWriteByte(0x80 | 0x40, 0);
+            } 
+        }
+
+        lcdWriteByte(caracter, 1);   // escreve caractere (RS=1)
+        col++;
+        str++;
+    }
 }
 
 void lcdInit(){

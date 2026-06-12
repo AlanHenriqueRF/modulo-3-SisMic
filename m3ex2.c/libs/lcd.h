@@ -7,6 +7,8 @@
 #define INSTR 0
 
 #define LCD 0x27
+#define LCD_COLS 16
+#define LCD_ROWS 2
 
 #define BT BIT3 // backlight luz da tela
 #define EN BIT2 // enable, na borda de decida é enviado o nibble
@@ -18,6 +20,10 @@
 //             <NibbleEnviado>
 //           __
 // EN -->  _|  |_
+
+// DDRAM -> Guarda endereço que será exibido
+// CGROM -> Endereços conhecidos
+// CGRAM -> 1 byte de char novos
 
 void lcdPrint(u8 * str);
 void lcdInit();
