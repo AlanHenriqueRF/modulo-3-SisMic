@@ -2,44 +2,40 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "m3ex2",
+            "name": "m3ex02",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m3ex2",
-                "resourceId": "/m3ex2"
+                "name": "m3ex02",
+                "resourceId": "/m3ex02"
             }
         },
         {
-            "name": "m3ex6",
+            "name": "m3ex06",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m3ex6",
-                "resourceId": "/m3ex6"
+                "name": "m3ex06",
+                "resourceId": "/m3ex06"
             }
         },
         {
-            "name": "códigoTestAlanLCD",
+            "name": "libs",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "códigoTestAlanLCD",
-                "resourceId": "/códigoTestAlanLCD"
-            },
-            "connections": [
-                {
-                    "name": "TI MSP430 USB1",
-                    "cores": [
-                        {
-                            "name": "MSP430",
-                            "debuggerSettings": {
-                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
-                            }
-                        }
-                    ]
-                }
-            ]
+                "name": "libs",
+                "resourceId": "/libs"
+            }
+        },
+        {
+            "name": "lcdS1WriteS2Erase",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lcdS1WriteS2Erase",
+                "resourceId": "/lcdS1WriteS2Erase"
+            }
         }
     ]
 }

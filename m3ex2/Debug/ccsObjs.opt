@@ -1,6 +1,0 @@
-"./m3ex2.obj"
-"./libs/i2c.obj"
-"./libs/lcd.obj"
-"../lnk_msp430f5529.cmd"
--llibmath.a
--llibc.a

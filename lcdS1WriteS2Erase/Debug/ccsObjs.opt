@@ -1,0 +1,6 @@
+"./i2c.obj"
+"./lcd.obj"
+"./lcdS1WriteS2Erase.obj"
+"../lnk_msp430f5529.cmd"
+-llibmath.a
+-llibc.a
