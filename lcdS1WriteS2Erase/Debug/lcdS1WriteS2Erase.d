@@ -1,9 +1,9 @@
 # FIXED
 
 lcdS1WriteS2Erase.obj: ../lcdS1WriteS2Erase.c
-lcdS1WriteS2Erase.obj: ../../Libs/i2c.h
-lcdS1WriteS2Erase.obj: ../../Libs/types.h
-lcdS1WriteS2Erase.obj: ../../Libs/lcd.h
+lcdS1WriteS2Erase.obj: ../../libs/i2c.h
+lcdS1WriteS2Erase.obj: ../../libs/types.h
+lcdS1WriteS2Erase.obj: ../../libs/lcd.h
 lcdS1WriteS2Erase.obj: C:/ti/ccs2050/ccs/ccs_base/msp430/include/msp430.h
 lcdS1WriteS2Erase.obj: C:/ti/ccs2050/ccs/ccs_base/msp430/include/msp430f5529.h
 lcdS1WriteS2Erase.obj: C:/ti/ccs2050/ccs/ccs_base/msp430/include/in430.h
@@ -22,11 +22,11 @@ lcdS1WriteS2Erase.obj: C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
 
 ../lcdS1WriteS2Erase.c:
 
-../../Libs/i2c.h:
+../../libs/i2c.h:
 
-../../Libs/types.h:
+../../libs/types.h:
 
-../../Libs/lcd.h:
+../../libs/lcd.h:
 
 C:/ti/ccs2050/ccs/ccs_base/msp430/include/msp430.h:
 
