@@ -20,15 +20,6 @@
             }
         },
         {
-            "name": "libs",
-            "type": "ccs-debug",
-            "request": "launch",
-            "projectInfo": {
-                "name": "libs",
-                "resourceId": "/libs"
-            }
-        },
-        {
             "name": "lcdS1WriteS2Erase",
             "type": "ccs-debug",
             "request": "launch",

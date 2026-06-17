@@ -9,33 +9,33 @@ CMD_SRCS += \
 ../lnk_msp430f5529.cmd 
 
 C_SRCS += \
-C:/Users/alhen/modulo3/Libs/i2c.c \
-C:/Users/alhen/modulo3/Libs/lcd.c \
-../m3ex06.c 
+../i2c.c \
+../lcd.c \
+../main.c 
 
 C_DEPS += \
 ./i2c.d \
 ./lcd.d \
-./m3ex06.d 
+./main.d 
 
 OBJS += \
 ./i2c.obj \
 ./lcd.obj \
-./m3ex06.obj 
+./main.obj 
 
 OBJS__QUOTED += \
 "i2c.obj" \
 "lcd.obj" \
-"m3ex06.obj" 
+"main.obj" 
 
 C_DEPS__QUOTED += \
 "i2c.d" \
 "lcd.d" \
-"m3ex06.d" 
+"main.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/alhen/modulo3/Libs/i2c.c" \
-"C:/Users/alhen/modulo3/Libs/lcd.c" \
-"../m3ex06.c" 
+"../i2c.c" \
+"../lcd.c" \
+"../main.c" 
 
 

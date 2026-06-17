@@ -5,37 +5,28 @@
 SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
-CMD_SRCS += \
-../lnk_msp430f5529.cmd 
-
 C_SRCS += \
-C:/Users/alhen/modulo3/Libs/i2c.c \
-C:/Users/alhen/modulo3/Libs/lcd.c \
-../m3ex06.c 
+../libs/i2c.c \
+../libs/lcd.c 
 
 C_DEPS += \
-./i2c.d \
-./lcd.d \
-./m3ex06.d 
+./libs/i2c.d \
+./libs/lcd.d 
 
 OBJS += \
-./i2c.obj \
-./lcd.obj \
-./m3ex06.obj 
+./libs/i2c.obj \
+./libs/lcd.obj 
 
 OBJS__QUOTED += \
-"i2c.obj" \
-"lcd.obj" \
-"m3ex06.obj" 
+"libs\i2c.obj" \
+"libs\lcd.obj" 
 
 C_DEPS__QUOTED += \
-"i2c.d" \
-"lcd.d" \
-"m3ex06.d" 
+"libs\i2c.d" \
+"libs\lcd.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/alhen/modulo3/Libs/i2c.c" \
-"C:/Users/alhen/modulo3/Libs/lcd.c" \
-"../m3ex06.c" 
+"../libs/i2c.c" \
+"../libs/lcd.c" 
 
 

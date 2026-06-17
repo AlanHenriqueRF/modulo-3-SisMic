@@ -1,5 +1,5 @@
-#include "../libs/i2c.h"
-#include "../libs/lcd.h"
+#include "../Libs/i2c.h"
+#include "../Libs/lcd.h"
 #include <msp430.h>
 #include <stdint.h>
 
