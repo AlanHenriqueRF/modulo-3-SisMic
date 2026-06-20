@@ -1,3 +1,4 @@
+"./adc.obj"
 "./i2c.obj"
 "./lcd.obj"
 "./main.obj"

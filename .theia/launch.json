@@ -27,6 +27,15 @@
                 "name": "lcdS1WriteS2Erase",
                 "resourceId": "/lcdS1WriteS2Erase"
             }
+        },
+        {
+            "name": "m3ex14",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex14",
+                "resourceId": "/m3ex14"
+            }
         }
     ]
 }

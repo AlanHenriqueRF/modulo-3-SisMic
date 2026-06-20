@@ -13,5 +13,10 @@
       "directory" : "C:/Users/alhen/modulo3/libs/Debug",
       "command"   : "clang++ -I\"C:/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"C:/Users/alhen/modulo3/libs\" -I\"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -xc",
       "file"      : "C:/Users/alhen/modulo3/libs/main.c"
+   },
+   {
+      "directory" : "C:/Users/alhen/modulo3/libs/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"C:/Users/alhen/modulo3/libs\" -I\"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -xc",
+      "file"      : "C:/Users/alhen/modulo3/libs/adc.c"
    }
 ]

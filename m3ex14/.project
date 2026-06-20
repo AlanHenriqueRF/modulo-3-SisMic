@@ -17,4 +17,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>adc.c</name>
+			<type>1</type>
+			<location>C:/Users/alhen/modulo3/libs/adc.c</location>
+		</link>
+	</linkedResources>
 </projectDescription>

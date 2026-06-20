@@ -9,31 +9,37 @@ CMD_SRCS += \
 ../lnk_msp430f5529.cmd 
 
 C_SRCS += \
+../adc.c \
 ../i2c.c \
 ../lcd.c \
 ../main.c 
 
 C_DEPS += \
+./adc.d \
 ./i2c.d \
 ./lcd.d \
 ./main.d 
 
 OBJS += \
+./adc.obj \
 ./i2c.obj \
 ./lcd.obj \
 ./main.obj 
 
 OBJS__QUOTED += \
+"adc.obj" \
 "i2c.obj" \
 "lcd.obj" \
 "main.obj" 
 
 C_DEPS__QUOTED += \
+"adc.d" \
 "i2c.d" \
 "lcd.d" \
 "main.d" 
 
 C_SRCS__QUOTED += \
+"../adc.c" \
 "../i2c.c" \
 "../lcd.c" \
 "../main.c" 

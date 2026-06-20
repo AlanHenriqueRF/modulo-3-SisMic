@@ -10,6 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./adc.obj" \
 "./i2c.obj" \
 "./lcd.obj" \
 "./main.obj" \
@@ -137,8 +138,8 @@ libs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "i2c.obj" "lcd.obj" "main.obj" 
-	-$(RM) "i2c.d" "lcd.d" "main.d" 
+	-$(RM) "adc.obj" "i2c.obj" "lcd.obj" "main.obj" 
+	-$(RM) "adc.d" "i2c.d" "lcd.d" "main.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents

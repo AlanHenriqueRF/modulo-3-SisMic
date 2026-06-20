@@ -9,21 +9,27 @@ CMD_SRCS += \
 ../lnk_msp430f5529.cmd 
 
 C_SRCS += \
-../m3ex13.c 
+C:/Users/alhen/modulo3/libs/adc.c \
+../m3ex14.c 
 
 C_DEPS += \
-./m3ex13.d 
+./adc.d \
+./m3ex14.d 
 
 OBJS += \
-./m3ex13.obj 
+./adc.obj \
+./m3ex14.obj 
 
 OBJS__QUOTED += \
-"m3ex13.obj" 
+"adc.obj" \
+"m3ex14.obj" 
 
 C_DEPS__QUOTED += \
-"m3ex13.d" 
+"adc.d" \
+"m3ex14.d" 
 
 C_SRCS__QUOTED += \
-"../m3ex13.c" 
+"C:/Users/alhen/modulo3/libs/adc.c" \
+"../m3ex14.c" 
 
 
