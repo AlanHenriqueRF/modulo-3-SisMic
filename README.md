@@ -13,6 +13,6 @@ para perifericos conectados ao fio `SDA` do protocolo **I2C**.
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | 6 | Escreva seu nome no display | ✅ | ❌ |
 | 2 | 14 | - | ✅ | ❌ |
-| 3 | 19 | Escreva seu nome no Terminal | ❌ | ❌ |
+| 3 | 19 | Escreva seu nome no Terminal | ✅ | ❌ |
 | Prob. | 20 | Final da lista de exercicios | ❌ | ❌ |
 | --- | --- | --- | --- | --- |
