@@ -14,6 +14,7 @@ ORDERED_OBJS += \
 "./i2c.obj" \
 "./lcd.obj" \
 "./main.obj" \
+"./uart.obj" \
 "../lnk_msp430f5529.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmath.a \
@@ -138,8 +139,8 @@ libs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "adc.obj" "i2c.obj" "lcd.obj" "main.obj" 
-	-$(RM) "adc.d" "i2c.d" "lcd.d" "main.d" 
+	-$(RM) "adc.obj" "i2c.obj" "lcd.obj" "main.obj" "uart.obj" 
+	-$(RM) "adc.d" "i2c.d" "lcd.d" "main.d" "uart.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -36,6 +36,24 @@
                 "name": "m3ex14",
                 "resourceId": "/m3ex14"
             }
+        },
+        {
+            "name": "m3ex15",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex15",
+                "resourceId": "/m3ex15"
+            }
+        },
+        {
+            "name": "m3ex19",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m3ex19",
+                "resourceId": "/m3ex19"
+            }
         }
     ]
 }

@@ -1,4 +1,5 @@
-"./m3ex18.obj"
+"./m3ex19.obj"
+"./uart.obj"
 "../lnk_msp430f5529.cmd"
 -llibmath.a
 -llibc.a

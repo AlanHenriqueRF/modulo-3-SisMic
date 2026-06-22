@@ -12,36 +12,42 @@ C_SRCS += \
 ../adc.c \
 ../i2c.c \
 ../lcd.c \
-../main.c 
+../main.c \
+../uart.c 
 
 C_DEPS += \
 ./adc.d \
 ./i2c.d \
 ./lcd.d \
-./main.d 
+./main.d \
+./uart.d 
 
 OBJS += \
 ./adc.obj \
 ./i2c.obj \
 ./lcd.obj \
-./main.obj 
+./main.obj \
+./uart.obj 
 
 OBJS__QUOTED += \
 "adc.obj" \
 "i2c.obj" \
 "lcd.obj" \
-"main.obj" 
+"main.obj" \
+"uart.obj" 
 
 C_DEPS__QUOTED += \
 "adc.d" \
 "i2c.d" \
 "lcd.d" \
-"main.d" 
+"main.d" \
+"uart.d" 
 
 C_SRCS__QUOTED += \
 "../adc.c" \
 "../i2c.c" \
 "../lcd.c" \
-"../main.c" 
+"../main.c" \
+"../uart.c" 
 
 
