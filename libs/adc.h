@@ -16,5 +16,7 @@ u16 adcRead(u8 port);
  */
 void initAdcInterrupt(void);
 
+void adcOscConfig(uint8_t canais);
+
 
 #endif //__ADC_H

@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Mon Jun 22 10:32:38 2026
+>> Linked Wed Jun 24 16:35:03 2026
 
 OUTPUT FILE NAME:   <m3ex19.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00004442
@@ -20,7 +20,7 @@ MEMORY CONFIGURATION
   INFOA                 00001980   00000080  00000000  00000080  RWIX
   USBRAM                00001c00   00000800  00000000  00000800  RWIX
   RAM                   00002400   00002000  000000a0  00001f60  RWIX
-  FLASH                 00004400   0000bb80  0000008a  0000baf6  RWIX
+  FLASH                 00004400   0000bb80  00000080  0000bb00  RWIX
   INT00                 0000ff80   00000002  00000000  00000002  RWIX
   INT01                 0000ff82   00000002  00000000  00000002  RWIX
   INT02                 0000ff84   00000002  00000000  00000002  RWIX
@@ -107,12 +107,12 @@ section   page    origin      length       input sections
 
 .cinit     0    00004400    00000000     
 
-.const     0    00004474    0000000e     
-                  00004474    0000000e     m3ex19.obj (.const:.string)
-
 .text:_isr 
-*          0    00004482    00000008     
-                  00004482    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+*          0    00004474    00000008     
+                  00004474    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+
+.const     0    0000447c    00000004     
+                  0000447c    00000004     m3ex19.obj (.const:.string)
 
 .binit     0    00004400    00000000     
 
@@ -202,9 +202,9 @@ MODULE SUMMARY
        ------             ----   -------   -------
     .\
        uart.obj           62     0         0      
-       m3ex19.obj         24     14        0      
+       m3ex19.obj         24     4         0      
     +--+------------------+------+---------+---------+
-       Total:             86     14        0      
+       Total:             86     4         0      
                                                   
     C:\ti\ccs2050\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
        boot.c.obj         20     2         0      
@@ -238,7 +238,7 @@ MODULE SUMMARY
                                                   
        Stack:             0      0         160    
     +--+------------------+------+---------+---------+
-       Grand Total:       124    60        160    
+       Grand Total:       124    50        160    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -981,7 +981,7 @@ address   name
 00004400  __TI_CINIT_Base       
 00004400  __TI_CINIT_Limit      
 00004400  __TI_CINIT_Warm       
-00004482  __TI_ISR_TRAP         
+00004474  __TI_ISR_TRAP         
 0000ffd2  __TI_int41            
 0000ffd4  __TI_int42            
 0000ffd6  __TI_int43            
@@ -1765,7 +1765,7 @@ address   name
 0000446a  C$$EXIT               
 0000446a  abort                 
 00004470  _system_pre_init      
-00004482  __TI_ISR_TRAP         
+00004474  __TI_ISR_TRAP         
 0000ffd2  __TI_int41            
 0000ffd4  __TI_int42            
 0000ffd6  __TI_int43            

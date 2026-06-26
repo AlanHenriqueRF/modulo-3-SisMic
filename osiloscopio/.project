@@ -33,5 +33,10 @@
 			<type>1</type>
 			<location>C:/Users/alhen/modulo3/libs/lcd.c</location>
 		</link>
+		<link>
+			<name>uart.c</name>
+			<type>1</type>
+			<location>C:/Users/alhen/modulo3/libs/uart.c</location>
+		</link>
 	</linkedResources>
 </projectDescription>

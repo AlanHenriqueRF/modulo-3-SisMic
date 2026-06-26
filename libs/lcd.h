@@ -29,5 +29,7 @@ void lcdPrint(u8 * str);
 void lcdInit();
 void lcdWriteNibble(u8 nibble, u8 isChar);
 void lcdWriteByte(u8 byte, u8 isChar);
+void lcdClear();
+void lcdHome();
 
 #endif //__LCD_H

@@ -1,6 +1,7 @@
 # FIXED
 
 uart.obj: ../uart.c
+uart.obj: ../types.h
 uart.obj: C:/ti/ccs2050/ccs/ccs_base/msp430/include/msp430.h
 uart.obj: C:/ti/ccs2050/ccs/ccs_base/msp430/include/msp430f5529.h
 uart.obj: C:/ti/ccs2050/ccs/ccs_base/msp430/include/in430.h
@@ -16,9 +17,10 @@ uart.obj: C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/
 uart.obj: C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_types.h
 uart.obj: C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_stdint.h
 uart.obj: C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/_stdint.h
-uart.obj: ../types.h
 
 ../uart.c:
+
+../types.h:
 
 C:/ti/ccs2050/ccs/ccs_base/msp430/include/msp430.h:
 
@@ -49,6 +51,4 @@ C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_types
 C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_stdint.h:
 
 C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/_stdint.h:
-
-../types.h:
 

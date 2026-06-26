@@ -43,7 +43,7 @@ void lcdPrint(u8 * str){
             if (line < LCD_ROWS - 1) {
                 line++;
                 col = 0;
-                lcdWriteByte(0x80 | 0x40, 0);
+                lcdWriteByte(0x80 | 0x40, INSTR);
             } 
         }
 
@@ -66,4 +66,12 @@ void lcdInit(){
     lcdWriteByte(0x28, INSTR); // Modo 4 bits com 2 linhas
     
     lcdWriteByte(0x01, INSTR); // CLEAR LCD 
+}
+
+void lcdClear() {
+    lcdWriteByte(0x01, INSTR);
+}
+
+void lcdHome() {
+    lcdWriteByte(0x80, INSTR);
 }

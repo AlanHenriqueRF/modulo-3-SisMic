@@ -7,7 +7,7 @@ int main(void) {
   WDTCTL = WDTPW | WDTHOLD;
 
   uartOpen(1); 
-  uartPrint("Alan Henrique");
+  uartPrint("OK");
 
   while (1) {
     

@@ -54,6 +54,24 @@
                 "name": "m3ex19",
                 "resourceId": "/m3ex19"
             }
+        },
+        {
+            "name": "osiloscopio",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "osiloscopio",
+                "resourceId": "/osiloscopio"
+            }
+        },
+        {
+            "name": "libs",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "libs",
+                "resourceId": "/libs"
+            }
         }
     ]
 }
