@@ -72,6 +72,15 @@
                 "name": "libs",
                 "resourceId": "/libs"
             }
+        },
+        {
+            "name": "experimento",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "experimento",
+                "resourceId": "/experimento"
+            }
         }
     ]
 }
